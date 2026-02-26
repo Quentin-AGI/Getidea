@@ -30,7 +30,7 @@
   <script>
     const cvs = document.getElementById('game'), ctx = cvs.getContext('2d');
     const scoreEl = document.getElementById('score'), restartBtn = document.getElementById('restart');
-    const N = 20, CELL = cvs.width / N, SPEED = 180; // 调慢速度，便于控制
+    const N = 20, CELL = cvs.width / N, SPEED = 180;
     let snake, dir, nextDir, food, score, timer, over;
 
     const randCell = () => ({ x: (Math.random() * N) | 0, y: (Math.random() * N) | 0 });
